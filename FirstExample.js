@@ -7,7 +7,7 @@ const Bridge = window.AdaptavistBridgeContext;
    type: 'GET'
 })
     .then(issue => {
-       document.getElementById("issueType").innerHTML= `${issue.customfield_10044} is a ${issue.fields.issuetype.name} not in ${issue.fields.status.name}`;
+       document.getElementById("issueType").innerHTML= `${issue.fields.customfield_10044} is a ${issue.fields.issuetype.name} not in ${issue.fields.status.name}`;
    });
 
 }
