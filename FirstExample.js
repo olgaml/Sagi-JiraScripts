@@ -7,7 +7,7 @@ const Bridge = window.AdaptavistBridgeContext;
    type: 'GET'
 })
     .then(issue => {
-       document.getElementById("issueType").innerHTML= `${issue.key} is a ${issue.fields.issuetype.name} in ${issue.fields.status.name}`;
+       document.getElementById("issueType").innerHTML= `${issue.key} is not a ${issue.fields.issuetype.name} in ${issue.fields.status.name}`;
    });
 
 }
